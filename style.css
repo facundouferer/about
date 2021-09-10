@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    color: azure;    
+}
+
+.logo {
+    margin-top: 25%;
+}
+
+a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+}
+
+a:hover {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.social-links {
+    text-align: center;    
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/*signature*/
+
+@keyframes signature-color {
+    0% {
+        fill: white;
+    }
+    20% {
+        fill: rgb(255, 0, 0);
+    }
+    30% {
+        fill: rgb(255, 208, 0);
+    }
+    40% {
+        fill: rgb(81, 255, 0);
+    }
+    50% {
+        fill: rgb(0, 255, 255);
+    }
+    60% {
+        fill: rgb(0, 68, 255);
+    }
+    70% {
+        fill: rgb(234, 0, 255);
+    }
+    80% {
+        fill: rgb(255, 0, 0);
+    }
+    100% {
+        fill: white;
+    }
+}
+
+.signature {
+    animation-name: signature-color;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
